@@ -1,3 +1,19 @@
+# [5.2.0-beta.3](https://github.com/commercelayer/commercelayer-cli-plugin-orders/compare/v5.2.0-beta.2...v5.2.0-beta.3) (2025-01-31)
+
+
+### Bug Fixes
+
+* fix security issue ([5fa7463](https://github.com/commercelayer/commercelayer-cli-plugin-orders/commit/5fa746346a4ddf40180ca8f19254cf302c539d1c))
+* fix security issue ([a2a21ef](https://github.com/commercelayer/commercelayer-cli-plugin-orders/commit/a2a21ef4c68f944b05863090cf8a3fbf211de885))
+* fix specs ([9610584](https://github.com/commercelayer/commercelayer-cli-plugin-orders/commit/96105849d146b9c48d8d105a259c4d2a2cc6d05a))
+* update readme ([ce0e85a](https://github.com/commercelayer/commercelayer-cli-plugin-orders/commit/ce0e85a786acae26b8b9b42cb529a136a52d9818))
+* update readme and dependencies ([3356f63](https://github.com/commercelayer/commercelayer-cli-plugin-orders/commit/3356f63cc94ae284b844f1d39a4958be9b8b3ada))
+
+
+### Features
+
+* add status option flag ([7ca1d4e](https://github.com/commercelayer/commercelayer-cli-plugin-orders/commit/7ca1d4ed3bf5857fb088b70397601f0eae393b46))
+
 ## [5.1.2](https://github.com/commercelayer/commercelayer-cli-plugin-orders/compare/v5.1.1...v5.1.2) (2024-10-21)
 
 
