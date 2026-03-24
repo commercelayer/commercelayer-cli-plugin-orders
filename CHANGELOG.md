@@ -1,3 +1,17 @@
+## [5.6.1](https://github.com/commercelayer/commercelayer-cli-plugin-orders/compare/v5.6.0...v5.6.1) (2026-03-24)
+
+
+### Bug Fixes
+
+* remove unused config files ([2ea8086](https://github.com/commercelayer/commercelayer-cli-plugin-orders/commit/2ea8086d923ca291c3b2943439cc8c623e820e5b))
+
+# [5.6.0](https://github.com/commercelayer/commercelayer-cli-plugin-orders/compare/v5.5.0...v5.6.0) (2026-03-24)
+
+
+### Features
+
+* add biome ([8d5a06f](https://github.com/commercelayer/commercelayer-cli-plugin-orders/commit/8d5a06f512bd7222fb2b8a007f7f4121e2b4a21e))
+
 # [5.5.0](https://github.com/commercelayer/commercelayer-cli-plugin-orders/compare/v5.4.10...v5.5.0) (2026-03-24)
 
 

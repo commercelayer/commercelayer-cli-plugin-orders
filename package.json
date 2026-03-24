@@ -1,7 +1,7 @@
 {
   "name": "@commercelayer/cli-plugin-orders",
   "description": "Commerce Layer CLI Orders plugin",
-  "version": "5.5.0",
+  "version": "5.6.1",
   "author": "Pierluigi Viti <pierluigi@commercelayer.io>",
   "homepage": "https://github.com/commercelayer/commercelayer-cli-plugin-orders",
   "repository": "commercelayer/commercelayer-cli-plugin-orders",
@@ -77,7 +77,7 @@
   },
   "dependencies": {
     "@commercelayer/cli-core": "^5.10.8",
-    "@commercelayer/cli-ux": "1.0.6",
+    "@commercelayer/cli-ux": "^1.1.0",
     "@commercelayer/sdk": "^6.55.0",
     "@oclif/core": "^3.27.0",
     "inquirer": "^8.2.7",
