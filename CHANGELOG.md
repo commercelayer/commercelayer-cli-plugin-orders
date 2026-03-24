@@ -1,3 +1,15 @@
+# [5.6.0-oclif4.1](https://github.com/commercelayer/commercelayer-cli-plugin-orders/compare/v5.5.0...v5.6.0-oclif4.1) (2026-03-24)
+
+
+### Bug Fixes
+
+* fix release config ([98f1af3](https://github.com/commercelayer/commercelayer-cli-plugin-orders/commit/98f1af364e8e47e422cfe09d3e292eb4f5da7b0a))
+
+
+### Features
+
+* add biome ([8d5a06f](https://github.com/commercelayer/commercelayer-cli-plugin-orders/commit/8d5a06f512bd7222fb2b8a007f7f4121e2b4a21e))
+
 # [5.5.0](https://github.com/commercelayer/commercelayer-cli-plugin-orders/compare/v5.4.10...v5.5.0) (2026-03-24)
 
 
