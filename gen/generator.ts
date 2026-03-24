@@ -1,4 +1,5 @@
 
+import { execSync } from 'node:child_process'
 import fs from 'node:fs'
 import { join } from 'node:path'
 import { clSchema } from '@commercelayer/cli-core'
@@ -77,7 +78,9 @@ const updateTriggers = async (): Promise<any> => {
 
   triggers = triggers.replace(/##__ACTION__##/, Object.values(actions).map(v => `'${v.action}'`).join(' |\n\t'))
 
-  fs.writeFileSync('src/triggers.ts', triggers)
+  const triggersFilePath = 'src/triggers.ts'
+  fs.writeFileSync(triggersFilePath, triggers)
+  formatCode(triggersFilePath)
 
   // biome-ignore lint/security/noGlobalEval: left for compatibility with old linter
   return eval(`({${actionsObject}})`)
@@ -92,6 +95,16 @@ const FLAG_VALUE_STR = `value: Flags.string({
       multiple: false,
       required: true,
     }),`
+
+
+function formatCode(sourcePath: string): void {
+  try {
+    console.log(`- Formatting source code: ${sourcePath}`)
+    execSync(`pnpm biome check --write ${sourcePath}`, { encoding: "utf-8" })
+  } catch (error) {
+    console.error("Formatter error:", error)
+  }
+}
 
 
 const generate = async () => {
@@ -136,6 +149,9 @@ const generate = async () => {
   Manifest.run().then(() => console.log('Generated commands manifest'))
     .then(() => console.log('Order commands generation completed.'))
     */
+
+formatCode(COMMANDS_DIR)
+formatCode(SPECS_DIR)
 
 }
 
