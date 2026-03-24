@@ -1,3 +1,11 @@
+## [5.6.2-oclif4.1](https://github.com/commercelayer/commercelayer-cli-plugin-orders/compare/v5.6.1...v5.6.2-oclif4.1) (2026-03-24)
+
+
+### Bug Fixes
+
+* fix release config ([98f1af3](https://github.com/commercelayer/commercelayer-cli-plugin-orders/commit/98f1af364e8e47e422cfe09d3e292eb4f5da7b0a))
+* update dependencies ([5efa1ce](https://github.com/commercelayer/commercelayer-cli-plugin-orders/commit/5efa1cee0c5bd6603a245b73d196e1609ae4b205))
+
 ## [5.6.1](https://github.com/commercelayer/commercelayer-cli-plugin-orders/compare/v5.6.0...v5.6.1) (2026-03-24)
 
 ### Bug Fixes
