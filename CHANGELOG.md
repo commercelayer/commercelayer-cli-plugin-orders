@@ -1,3 +1,20 @@
+# [6.0.0-oclif4.2](https://github.com/commercelayer/commercelayer-cli-plugin-orders/compare/v6.0.0-oclif4.1...v6.0.0-oclif4.2) (2026-03-26)
+
+
+### Bug Fixes
+
+* fix dependencies ([f01767e](https://github.com/commercelayer/commercelayer-cli-plugin-orders/commit/f01767e01a2e3bb08d2ebffe0aac70d2cd47b60c))
+
+
+### Features
+
+* require node v22 and fix actions ([fa0bd99](https://github.com/commercelayer/commercelayer-cli-plugin-orders/commit/fa0bd99661fcb98ed2e45b8e3f35c892a2407d2c))
+
+
+### BREAKING CHANGES
+
+* require node v22
+
 # [6.0.0-oclif4.1](https://github.com/commercelayer/commercelayer-cli-plugin-orders/compare/v5.6.2-oclif4.1...v6.0.0-oclif4.1) (2026-03-24)
 
 
