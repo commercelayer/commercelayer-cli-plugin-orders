@@ -1,7 +1,6 @@
 import { clColor, clOutput, clUpdate } from '@commercelayer/cli-core'
 import { CommerceLayerStatic, type Order } from '@commercelayer/sdk'
-import { Args, Command, Flags } from '@oclif/core'
-import type { CommandError } from '@oclif/core/lib/interfaces'
+import { Args, Command, Flags, type Interfaces } from '@oclif/core'
 import exec from './exec'
 import type { ActionType } from './triggers'
 
@@ -60,13 +59,13 @@ export default abstract class extends Command {
   }
 
 
-  async catch(error: CommandError): Promise<any> {
+  async catch(error: Interfaces.CommandError): Promise<any> {
     if (error.message?.includes('quit')) this.exit()
     else this.handleError(error as Error)
   }
 
 
-  protected handleError(error: CommandError, flags?: any): void {
+  protected handleError(error: Interfaces.CommandError, flags?: any): void {
     if (error.message?.match(/Missing \d required args?:\nid/))
       this.error(`Missing the required unique ${clColor.style.error('id')} of the order`)
     else

@@ -1,9 +1,9 @@
 import { clUtil } from '@commercelayer/cli-core'
 import commercelayer, { type CommerceLayerClient } from '@commercelayer/sdk'
-import type { Config } from '@oclif/core/lib/interfaces'
+import type { Interfaces } from '@oclif/core'
 
 
-export const commercelayerInit = (flags: any, config?: Config): CommerceLayerClient => {
+export const commercelayerInit = (flags: any, config?: Interfaces.Config): CommerceLayerClient => {
 
   const organization = flags.organization
   const domain = flags.domain

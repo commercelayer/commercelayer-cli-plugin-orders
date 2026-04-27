@@ -1,7 +1,6 @@
 import { clColor } from '@commercelayer/cli-core'
 import type { CommerceLayerClient, Order, OrderUpdate, QueryParamsRetrieve } from '@commercelayer/sdk'
-import { CLIError } from '@oclif/core/lib/errors'
-import type { Config } from '@oclif/core/lib/interfaces'
+import { Errors, type Interfaces } from '@oclif/core'
 import { commercelayerInit } from './init'
 import type { ActionType } from './triggers'
 
@@ -9,7 +8,7 @@ import type { ActionType } from './triggers'
 
 export const checkOrder = async (cl: CommerceLayerClient, id: string): Promise<Order> => {
   const order = await cl.orders.retrieve(id).catch((err: Error) => {
-    if (cl.isApiError(err) && (err.status === 404)) throw new CLIError(`Invalid order or order not found: ${clColor.msg.error(id)}`)
+    if (cl.isApiError(err) && (err.status === 404)) throw new Errors.CLIError(`Invalid order or order not found: ${clColor.msg.error(id)}`)
     else throw err
   })
   return order
@@ -18,7 +17,7 @@ export const checkOrder = async (cl: CommerceLayerClient, id: string): Promise<O
 
 
 
-const exec = async (id: string, action: ActionType, flags: any, fields?: string[], config?: Config): Promise<Order> => {
+const exec = async (id: string, action: ActionType, flags: any, fields?: string[], config?: Interfaces.Config): Promise<Order> => {
 
   const cl = commercelayerInit(flags, config)
 
